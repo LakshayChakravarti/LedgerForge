@@ -16,6 +16,10 @@
 
 </div>
 
+### 🚀 Live Demo
+
+[Try LedgerForge](https://ledger-forge-three.vercel.app/)
+
 ---
 
 ## 🏗️ Architecture & Control Flow
@@ -158,7 +162,7 @@ flowchart TD
 ## 🗂️ Project Structure
 
 ```
-ledgerMind/
+LedgerForge/
 ├── backend/                             # FastAPI Python backend
 │   ├── app/
 │   │   ├── api/
@@ -242,7 +246,7 @@ ledgerMind/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/MDMOINAKHTARR/LedgerForge.git
+git clone https://github.com/LakshayChakravarti/LedgerForge.git
 cd LedgerForge
 ```
 
@@ -354,7 +358,7 @@ LedgerForge is architected for modern decoupled cloud deployment: **React Fronte
 ### 2. Deploy Backend (Render / Railway / Fly.io)
 
 #### Option A: Render (Blueprint 1-Click)
-The repository includes a ready-to-use [`render.yaml`](file:///c:/Users/Moin/Downloads/projects/ledgerMind/render.yaml) specification:
+The repository includes a ready-to-use [`render.yaml`](./render.yaml) specification:
 1. In Render, select **New +** → **Blueprint**.
 2. Connect this repository.
 3. Configure the environment variables:
@@ -363,7 +367,7 @@ The repository includes a ready-to-use [`render.yaml`](file:///c:/Users/Moin/Dow
    - `ALLOWED_ORIGINS`: Your Vercel frontend URL (e.g. `https://ledgerforge.vercel.app`)
 
 #### Option B: Railway / Fly.io / Docker
-The repository includes a production-ready [`Dockerfile`](file:///c:/Users/Moin/Downloads/projects/ledgerMind/Dockerfile):
+The repository includes a production-ready [`Dockerfile`](./Dockerfile):
 ```bash
 # Build and run container locally or deploy to Railway/Fly.io
 docker build -t ledgerforge-backend .
